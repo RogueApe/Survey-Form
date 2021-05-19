@@ -1,0 +1,81 @@
+<html>
+  <head>
+    <title>ID Survey Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <div class="container">
+    <header class="header">
+      <h1 id="title" class="text-center">Novec Holm Design Survey Form</h1>
+      <p id="description" class="description text-center">Thank you for taking your precious time to help us improve the platform.</p>
+    </header>
+    <form id="survey-form">
+      <div class="form-group">
+        <label id="name-label" for="name">Name</label>
+        <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required />
+      </div>
+      <div class="form-group">
+        <label id="email-label" for="email">Email</label>
+        <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email address" required />
+      </div>
+      <div class="form-group">
+        <label id="number-label" for="number">Age<span class="clue"> (optional)</span></label>
+        <input type="number" name="age" id="number" min="18" max="99" class="form-control" placeholder="Age" required />
+      </div>
+      <div class="form-group">
+        <p>Which option best describes your current role?</p>
+        <select id="dropdown" name="role" class="form-control" required>
+          <option disabled selected value>Select current role</option>
+          <option value="student">Student</option>
+          <option value="designer">Designer</option>
+          <option value="engineer">Engineer</option>
+          <option value="teacher">Teacher</option>
+          <option value="technician">Technician</option>
+          <option value="retired">Retired Person</option>
+          <option value="other">Others</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <p>Where you heard about Novec Holm Design?</p>
+        <label> <input name="user-recommend" value="facebook" type="radio" class="input-radio" />Facebook</label>
+        <label> <input name="user-recommend" value="instagram" type="radio" class="input-radio" />Instagram</label>
+        <label> <input name="user-recommend" value="friend" type="radio" class="input-radio" />Friend recommendation</label>
+        <label> <input name="user-recommend" value="web-advertisement" type="radio" class="input-radio" />Web advertisement</label>
+      </div>
+
+      <div class="form-group">
+        <p>Which concern you the most in renovation?</p>
+        <select id="dropdown" name="dropdown" class="form-control" required>
+          <option disabled selected value>Select an option</option>
+          <option value="minimalist">Budget</option>
+          <option value="urban">Communication</option>
+          <option value="minimalist">Design</option>
+          <option value="minimalist">Services</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <p>Which style is your favourite in interior design?<span class="clue"></span></p>
+
+        <label> <input name="prefer" value="bohemian" type="checkbox" class="input-checkbox" />Bohemian</label>
+        <label> <input name="prefer" value="comtemporary" type="checkbox" class="input-checkbox" />Comtemporary</label>
+        <label> <input name="prefer" value="industrial" type="checkbox" class="input-checkbox" />Industrial</label>
+        <label> <input name="prefer" value="minimalist" type="checkbox" class="input-checkbox" />Minimalist</label>
+        <label> <input name="prefer" value="urban" type="checkbox" class="input-checkbox" />Urban Living</label>
+        <label> <input name="prefer" value="scandinavian" type="checkbox" class="input-checkbox" />Scandinavian</label>
+      </div>
+
+      <div class="form-group">
+        <p>Any comments or suggestion?</p>
+        <p>
+          <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here..."></textarea>
+        </p>
+      </div>
+
+      <div class="form-group">
+        <button type="submit" id="submit" class="submit-button">Submit</button>
+      </div>
+    </form>
+  </div>
+</html>
